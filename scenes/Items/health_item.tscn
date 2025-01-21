@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4cqe6xu8wpdg"]
+
+[ext_resource type="Texture2D" uid="uid://bk0rc7s0gjid7" path="res://Jeu Assets/Items/Lait.png" id="1_0aeiv"]
+[ext_resource type="Script" path="res://scenes/Items/health_item.gd" id="1_eenmq"]
+[ext_resource type="Texture2D" uid="uid://biv0r8favuyl1" path="res://Jeu Assets/circle.png" id="2_o5s6d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rqles"]
+size = Vector2(28, 74)
+
+[node name="Health_item" type="Area2D"]
+script = ExtResource("1_eenmq")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.224305, 0.645295, 0.233808, 1)
+energy = 1.84
+texture = ExtResource("2_o5s6d")
+texture_scale = 0.39
+
+[node name="Health" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_0aeiv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_rqles")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

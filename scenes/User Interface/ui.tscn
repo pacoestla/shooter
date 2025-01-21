@@ -1,0 +1,87 @@
+[gd_scene load_steps=7 format=3 uid="uid://df68i4uuys8mg"]
+
+[ext_resource type="Script" path="res://scenes/User Interface/ui.gd" id="1_2okj2"]
+[ext_resource type="Theme" uid="uid://d1flxpwhfnunn" path="res://scenes/User Interface/main_theme.tres" id="1_8lprr"]
+[ext_resource type="Texture2D" uid="uid://bctikclqd0xgx" path="res://Jeu Assets/UI/Egg Ammo.png" id="1_l6na5"]
+[ext_resource type="Texture2D" uid="uid://tupw2uqljba2" path="res://Jeu Assets/UI/Grenage Ammo.png" id="2_e4skx"]
+[ext_resource type="Texture2D" uid="uid://dt14bjppan0qx" path="res://Jeu Assets/UI/Progress_Bar/under.png" id="4_lmv6q"]
+[ext_resource type="Texture2D" uid="uid://b4i7dfj33g5dd" path="res://Jeu Assets/UI/Progress_Bar/progress.png" id="6_lcpcl"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_2okj2")
+
+[node name="Egg Counter" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.01
+anchor_top = 0.94
+anchor_right = 0.01
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Egg Counter"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Egg Counter/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_8lprr")
+text = "20"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Egg Counter/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_l6na5")
+expand_mode = 4
+
+[node name="Grenade Counter" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.052
+anchor_top = 0.94
+anchor_right = 0.065
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Grenade Counter"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Grenade Left" type="Label" parent="Grenade Counter/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_8lprr")
+text = "5"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Grenade Counter/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_e4skx")
+expand_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -40.0
+offset_right = 150.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 25
+
+[node name="Health Bar" type="TextureProgressBar" parent="MarginContainer"]
+layout_mode = 2
+value = 43.0
+texture_under = ExtResource("4_lmv6q")
+texture_progress = ExtResource("6_lcpcl")

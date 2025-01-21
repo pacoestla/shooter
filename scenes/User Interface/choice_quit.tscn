@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmnmmcu12etf"]
+
+[ext_resource type="Theme" uid="uid://d1flxpwhfnunn" path="res://scenes/User Interface/main_theme.tres" id="1_7e8uq"]
+[ext_resource type="Script" path="res://scenes/User Interface/choice_quit.gd" id="1_78y0t"]
+
+[node name="choice quit" type="CanvasLayer"]
+script = ExtResource("1_78y0t")
+
+[node name="CanvasLayer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.5
+offset_top = -20.0
+offset_right = 67.5
+offset_bottom = 20.0
+
+[node name="NO" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_7e8uq")
+theme_override_font_sizes/font_size = 41
+text = "NO"
+
+[node name="YES" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_7e8uq")
+theme_override_font_sizes/font_size = 41
+text = "YES"
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.415
+anchor_right = 0.5
+anchor_bottom = 0.445
+offset_left = -109.5
+offset_top = -11.5
+offset_right = 109.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_7e8uq")
+theme_override_font_sizes/font_size = 41
+text = "Would you like to quit the game"
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/NO" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/YES" to="." method="_on_yes_pressed"]

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d1flxpwhfnunn"]
+
+[ext_resource type="FontFile" uid="uid://cdr88wvefdkj6" path="res://Jeu Assets/UI/Super Cartoon.ttf" id="1_wxq6q"]
+
+[resource]
+default_font = ExtResource("1_wxq6q")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2pv44mcqv2ii"]
+
+[ext_resource type="Script" path="res://scenes/projectiles/bullet.gd" id="1_kua8r"]
+[ext_resource type="Texture2D" uid="uid://cijdijiuo1ti8" path="res://Jeu Assets/Balle.png" id="2_2i4kk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qabic"]
+radius = 3.0
+height = 22.0
+
+[node name="Bullet" type="Area2D"]
+scale = Vector2(2.48, 2.48)
+collision_layer = 8
+collision_mask = 37
+script = ExtResource("1_kua8r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(0.0799997, 0.0799997)
+texture = ExtResource("2_2i4kk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_qabic")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

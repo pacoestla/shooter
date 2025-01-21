@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmfaouakpc3hs"]
+
+[ext_resource type="Script" path="res://scenes/projectiles/laser.gd" id="1_nafs2"]
+[ext_resource type="Texture2D" uid="uid://bhrpuco8yk00y" path="res://Jeu Assets/Oeuf.png" id="2_ufvyy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ypxde"]
+radius = 22.0
+height = 76.0
+
+[node name="Laser" type="Area2D"]
+scale = Vector2(0.66, 0.66)
+collision_layer = 8
+collision_mask = 38
+script = ExtResource("1_nafs2")
+speed = 2000
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.54747e-13, -1.19209e-07)
+scale = Vector2(0.31, 0.360465)
+texture = ExtResource("2_ufvyy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ypxde")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

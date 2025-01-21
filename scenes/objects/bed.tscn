@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://p30iinkxptui"]
+
+[ext_resource type="Texture2D" uid="uid://dkcv0d5lhkdty" path="res://Jeu Assets/Lit.png" id="1_gpdem"]
+[ext_resource type="Texture2D" uid="uid://d50tfiou1t0x" path="res://Jeu Assets/Coussing Long.png" id="2_25dvw"]
+[ext_resource type="Texture2D" uid="uid://c1gboag6mvmma" path="res://Jeu Assets/Coussins Carré.png" id="3_fwv3a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ia4js"]
+size = Vector2(390, 188)
+
+[node name="Bed" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="BedImage" type="Sprite2D" parent="."]
+position = Vector2(0.999969, 1.00003)
+scale = Vector2(0.436, 0.436)
+texture = ExtResource("1_gpdem")
+
+[node name="Pillow" type="Sprite2D" parent="BedImage"]
+position = Vector2(-6, 3)
+texture = ExtResource("2_25dvw")
+
+[node name="PillowSmall" type="Sprite2D" parent="BedImage"]
+position = Vector2(0, 7)
+texture = ExtResource("3_fwv3a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_ia4js")

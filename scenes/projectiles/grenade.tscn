@@ -1,0 +1,213 @@
+[gd_scene load_steps=10 format=3 uid="uid://dfyl8733ngk1u"]
+
+[ext_resource type="Script" path="res://scenes/projectiles/grenade.gd" id="1_65rkf"]
+[ext_resource type="Texture2D" uid="uid://cwslvwte1iqk" path="res://Jeu Assets/Egg Bomb.png" id="1_p1ag0"]
+[ext_resource type="Texture2D" uid="uid://bl0o0qkj4lkwv" path="res://Jeu Assets/Explosion.png" id="3_kyry8"]
+[ext_resource type="Texture2D" uid="uid://c617uqspu6s3n" path="res://resources/graphics/lights/textures/circle.png" id="4_txfle"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1nc35"]
+radius = 20.0
+
+[sub_resource type="Animation" id="Animation_chijg"]
+resource_name = "Explosion"
+length = 0.48
+step = 0.06
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.470588),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("eggplosion:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.12, 0.18, 0.24, 0.3, 0.36, 0.42),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.176471),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PointLight2D:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("eggplosion:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.294118, 0.470588),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_pfi5k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [5.72]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("eggplosion:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PointLight2D:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("eggplosion:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_oweg4"]
+resource_name = "Wait_time"
+length = 2.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.8, 1, 1.2, 1.33333, 1.46667, 1.56667, 1.66667, 1.73333, 1.8, 1.86667, 1.93333, 2, 2.06667, 2.13333, 2.16667, 2.2, 2.23333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [5.72, 1.28, 5.72, 1.28, 5.72, 1.28, 5.72, 1.28, 5.72, 1.28, 5.72, 1.28, 5.72, 1.28, 5.72, 1.28, 5.72, 1.28, 5.72, 1.28]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2.23333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"explode"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tl13i"]
+_data = {
+"Explosion": SubResource("Animation_chijg"),
+"RESET": SubResource("Animation_pfi5k"),
+"Wait_time": SubResource("Animation_oweg4")
+}
+
+[node name="grenade" type="RigidBody2D"]
+scale = Vector2(1.24001, 1.24001)
+collision_layer = 8
+collision_mask = 47
+gravity_scale = 0.0
+script = ExtResource("1_65rkf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.992771, 1.01351)
+shape = SubResource("CircleShape2D_1nc35")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.19209e-07, 1)
+scale = Vector2(0.258437, 0.258437)
+texture = ExtResource("1_p1ag0")
+
+[node name="eggplosion" type="Sprite2D" parent="."]
+light_mask = 512
+position = Vector2(-1.99999, 3)
+scale = Vector2(0.643653, 0.643653)
+texture = ExtResource("3_kyry8")
+hframes = 3
+vframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tl13i")
+}
+autoplay = "Wait_time"
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, 1)
+color = Color(0.941707, 0.401656, 0, 1)
+energy = 5.72
+texture = ExtResource("4_txfle")
+texture_scale = 0.03

@@ -1,0 +1,209 @@
+[gd_scene load_steps=33 format=3 uid="uid://c1srn4sd88mj0"]
+
+[ext_resource type="Texture2D" uid="uid://bd7han0xmip2e" path="res://Jeu Assets/Big Pigeon/attack/walk0000.png" id="1_14700"]
+[ext_resource type="Script" path="res://scenes/enemies/big_pigeon.gd" id="1_dii56"]
+[ext_resource type="Texture2D" uid="uid://cidj1svqsbntu" path="res://Jeu Assets/Big Pigeon/attack/walk0001.png" id="2_1ppux"]
+[ext_resource type="Shader" path="res://scenes/enemies/big_pigeon.gdshader" id="2_hgbct"]
+[ext_resource type="Texture2D" uid="uid://debwmiwmmch7c" path="res://Jeu Assets/Big Pigeon/attack/walk0002.png" id="3_bptnq"]
+[ext_resource type="Texture2D" uid="uid://b58myr38q6xm7" path="res://Jeu Assets/Big Pigeon/attack/walk0003.png" id="4_idi7m"]
+[ext_resource type="Texture2D" uid="uid://d1t3u6cebhjdy" path="res://Jeu Assets/Big Pigeon/attack/walk0004.png" id="5_xqrgd"]
+[ext_resource type="Texture2D" uid="uid://cypek072ugqpu" path="res://Jeu Assets/Big Pigeon/attack/walk0005.png" id="6_fwjn1"]
+[ext_resource type="Texture2D" uid="uid://bd6upgv6624j2" path="res://Jeu Assets/Big Pigeon/attack/walk0006.png" id="7_aos4j"]
+[ext_resource type="Texture2D" uid="uid://clujd0ded62r2" path="res://Jeu Assets/Big Pigeon/attack/walk0007.png" id="8_n2ifb"]
+[ext_resource type="Texture2D" uid="uid://rx8g65squ2x3" path="res://Jeu Assets/Big Pigeon/attack/walk0008.png" id="9_wd4gj"]
+[ext_resource type="Texture2D" uid="uid://bac7a3dj3krvy" path="res://Jeu Assets/Big Pigeon/attack/walk0009.png" id="10_7020t"]
+[ext_resource type="Texture2D" uid="uid://dloc1hpma8dm8" path="res://Jeu Assets/Big Pigeon/attack/walk0010.png" id="11_xqvye"]
+[ext_resource type="Texture2D" uid="uid://dmicsys8gwwfd" path="res://Jeu Assets/Big Pigeon/attack/walk0011.png" id="12_0uhft"]
+[ext_resource type="Texture2D" uid="uid://cwy826hvwh63c" path="res://Jeu Assets/Big Pigeon/walk/walk0000.png" id="13_6cl2y"]
+[ext_resource type="Texture2D" uid="uid://b18w4yrrp6h8t" path="res://Jeu Assets/Big Pigeon/walk/walk0001.png" id="14_munjh"]
+[ext_resource type="Texture2D" uid="uid://db63udq7phuvc" path="res://Jeu Assets/Big Pigeon/walk/walk0002.png" id="15_t4pj7"]
+[ext_resource type="Texture2D" uid="uid://exlaxk511avc" path="res://Jeu Assets/Big Pigeon/walk/walk0003.png" id="16_si0cp"]
+[ext_resource type="Texture2D" uid="uid://osrxi3h33loy" path="res://Jeu Assets/Big Pigeon/walk/walk0004.png" id="17_6lx4w"]
+[ext_resource type="Texture2D" uid="uid://cijybgxi7gur8" path="res://Jeu Assets/Big Pigeon/walk/walk0005.png" id="18_17uic"]
+[ext_resource type="Texture2D" uid="uid://daqqnjn2jcvbd" path="res://Jeu Assets/Big Pigeon/walk/walk0006.png" id="19_g64gr"]
+[ext_resource type="Texture2D" uid="uid://cvea30neq8g27" path="res://Jeu Assets/Big Pigeon/walk/walk0007.png" id="20_dx06j"]
+[ext_resource type="Texture2D" uid="uid://y4ui5v67wcp1" path="res://Jeu Assets/Sang.png" id="23_4toxn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0unhj"]
+shader = ExtResource("2_hgbct")
+shader_parameter/color = Color(0.916371, 0.747742, 0.712339, 1)
+shader_parameter/progress = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nkqux"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("1_14700")
+}, {
+"duration": 0.2,
+"texture": ExtResource("2_1ppux")
+}, {
+"duration": 0.2,
+"texture": ExtResource("3_bptnq")
+}, {
+"duration": 0.2,
+"texture": ExtResource("4_idi7m")
+}, {
+"duration": 0.2,
+"texture": ExtResource("5_xqrgd")
+}, {
+"duration": 0.2,
+"texture": ExtResource("6_fwjn1")
+}, {
+"duration": 0.2,
+"texture": ExtResource("7_aos4j")
+}, {
+"duration": 0.2,
+"texture": ExtResource("8_n2ifb")
+}, {
+"duration": 0.2,
+"texture": ExtResource("9_wd4gj")
+}, {
+"duration": 0.2,
+"texture": ExtResource("10_7020t")
+}, {
+"duration": 0.2,
+"texture": ExtResource("11_xqvye")
+}, {
+"duration": 0.2,
+"texture": ExtResource("12_0uhft")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("13_6cl2y")
+}, {
+"duration": 0.3,
+"texture": ExtResource("14_munjh")
+}, {
+"duration": 0.3,
+"texture": ExtResource("15_t4pj7")
+}, {
+"duration": 0.3,
+"texture": ExtResource("16_si0cp")
+}, {
+"duration": 0.3,
+"texture": ExtResource("17_6lx4w")
+}, {
+"duration": 0.3,
+"texture": ExtResource("18_17uic")
+}, {
+"duration": 0.3,
+"texture": ExtResource("19_g64gr")
+}, {
+"duration": 0.3,
+"texture": ExtResource("20_dx06j")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7aqh"]
+size = Vector2(265.806, 270.386)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5i8qc"]
+radius = 167.894
+height = 466.89
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oec0y"]
+radius = 1315.19
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6gafq"]
+particles_animation = true
+particles_anim_h_frames = 6
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Curve" id="Curve_kack3"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.0857289), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_hw7q8"]
+curve = SubResource("Curve_kack3")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nwrda"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 3.18
+direction = Vector3(1, 1, 0)
+spread = 180.0
+initial_velocity_min = 247.82
+initial_velocity_max = 372.06
+gravity = Vector3(0, 0, 0)
+scale_min = 0.2
+scale_max = 0.3
+scale_curve = SubResource("CurveTexture_hw7q8")
+anim_offset_max = 1.0
+
+[node name="BigPigeon" type="CharacterBody2D" groups=["Entity"]]
+scale = Vector2(0.561235, 0.565914)
+collision_layer = 2
+collision_mask = 11
+script = ExtResource("1_dii56")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_0unhj")
+position = Vector2(-30.2904, -1.76705)
+sprite_frames = SubResource("SpriteFrames_nkqux")
+animation = &"attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10.7962, -3.70487)
+rotation = -1.54646
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_q7aqh")
+
+[node name="Attack Area" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Attack Area"]
+position = Vector2(254.795, 3.5341)
+rotation = -1.5756
+shape = SubResource("CapsuleShape2D_5i8qc")
+
+[node name="Notice area" type="Area2D" parent="."]
+visible = false
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Notice area"]
+shape = SubResource("CircleShape2D_oec0y")
+
+[node name="Timers" type="Node" parent="."]
+
+[node name="Attack" type="Timer" parent="Timers"]
+one_shot = true
+
+[node name="Hit" type="Timer" parent="Timers"]
+process_callback = 0
+wait_time = 0.3
+one_shot = true
+
+[node name="Visibility timer" type="Timer" parent="Timers"]
+wait_time = 0.2
+one_shot = true
+
+[node name="Particles" type="Node2D" parent="."]
+
+[node name="HitParticles" type="GPUParticles2D" parent="Particles"]
+modulate = Color(0.16, 0, 0.00800003, 0.74902)
+material = SubResource("CanvasItemMaterial_6gafq")
+rotation = 0.00344293
+emitting = false
+amount = 30
+process_material = SubResource("ParticleProcessMaterial_nwrda")
+texture = ExtResource("23_4toxn")
+lifetime = 0.5
+one_shot = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="Attack Area" to="." method="_on_attack_area_body_entered"]
+[connection signal="body_exited" from="Attack Area" to="." method="_on_attack_area_body_exited"]
+[connection signal="body_entered" from="Notice area" to="." method="_on_notice_area_body_entered"]
+[connection signal="body_exited" from="Notice area" to="." method="_on_notice_area_body_exited"]
+[connection signal="timeout" from="Timers/Attack" to="." method="_on_attack_timeout"]
+[connection signal="timeout" from="Timers/Hit" to="." method="_on_hit_timeout"]
+[connection signal="timeout" from="Timers/Visibility timer" to="." method="_on_visibility_timer_timeout"]

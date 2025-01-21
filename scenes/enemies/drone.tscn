@@ -1,0 +1,293 @@
+[gd_scene load_steps=33 format=3 uid="uid://dalwwqj6txvv1"]
+
+[ext_resource type="Shader" path="res://scenes/enemies/drone.gdshader" id="1_0ehd0"]
+[ext_resource type="Script" path="res://scenes/enemies/drone.gd" id="1_t6816"]
+[ext_resource type="Texture2D" uid="uid://bua7631orjgcm" path="res://Jeu Assets/Animation Drone/frame0000.png" id="2_1i4p7"]
+[ext_resource type="Texture2D" uid="uid://dh82sv63nhjve" path="res://Jeu Assets/Animation Drone/frame0001.png" id="3_cyv8i"]
+[ext_resource type="Texture2D" uid="uid://ck8terbijsg7u" path="res://Jeu Assets/Animation Drone/frame0002.png" id="4_imecb"]
+[ext_resource type="Texture2D" uid="uid://dpbgcrqc3cs15" path="res://Jeu Assets/Animation Drone/frame0003.png" id="5_570ov"]
+[ext_resource type="Texture2D" uid="uid://c5b2tsa8rclbg" path="res://Jeu Assets/Animation Drone/frame0004.png" id="6_6wdf7"]
+[ext_resource type="Texture2D" uid="uid://obj1klrd6x3n" path="res://Jeu Assets/Animation Drone/frame0005.png" id="7_5hdqo"]
+[ext_resource type="Texture2D" uid="uid://4wh2jom6p2yo" path="res://Jeu Assets/Animation Drone/frame0006.png" id="8_178ni"]
+[ext_resource type="Texture2D" uid="uid://bex5us6midhl7" path="res://Jeu Assets/Animation Drone/frame0007.png" id="9_6lp0c"]
+[ext_resource type="Texture2D" uid="uid://d0orrib30xjpw" path="res://Jeu Assets/Animation Drone/frame0008.png" id="10_k1ccy"]
+[ext_resource type="Texture2D" uid="uid://h7d5wygqebdg" path="res://Jeu Assets/Animation Drone/frame0009.png" id="11_2oj7v"]
+[ext_resource type="Texture2D" uid="uid://dnmj52hbfdi4k" path="res://Jeu Assets/Animation Drone/frame0010.png" id="12_ketsg"]
+[ext_resource type="Texture2D" uid="uid://cebh51w0lxu8m" path="res://Jeu Assets/Animation Drone/frame0011.png" id="13_7f0h7"]
+[ext_resource type="Texture2D" uid="uid://bw7sob6x0ghhj" path="res://Jeu Assets/Animation Drone/frame0012.png" id="14_n7gu7"]
+[ext_resource type="Texture2D" uid="uid://b1fpyjipw1173" path="res://Jeu Assets/Animation Drone/frame0013.png" id="15_yhfs3"]
+[ext_resource type="Texture2D" uid="uid://d2eiall3g52gd" path="res://Jeu Assets/Animation Drone/frame0014.png" id="16_cx4ab"]
+[ext_resource type="Texture2D" uid="uid://bfjx31of766tf" path="res://Jeu Assets/Animation Drone/frame0015.png" id="17_wws7l"]
+[ext_resource type="Texture2D" uid="uid://befky1jadcask" path="res://Jeu Assets/Animation Drone/frame0016.png" id="18_1tusn"]
+[ext_resource type="Texture2D" uid="uid://l0uftpw3t0fq" path="res://Jeu Assets/Animation Drone/frame0017.png" id="19_fhjlo"]
+[ext_resource type="Texture2D" uid="uid://j0wfv8dco6im" path="res://Jeu Assets/Animation Drone/frame0018.png" id="20_r66l3"]
+[ext_resource type="Texture2D" uid="uid://c4gnfokyeg4cv" path="res://Jeu Assets/Animation Drone/frame0019.png" id="21_wbqtj"]
+[ext_resource type="Texture2D" uid="uid://b6xmeyj0c8ph8" path="res://Jeu Assets/Animation Drone/frame0020.png" id="22_wbhda"]
+[ext_resource type="Texture2D" uid="uid://bl0o0qkj4lkwv" path="res://Jeu Assets/Explosion.png" id="23_x0axy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ox0pn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pfe3a"]
+shader = ExtResource("1_0ehd0")
+shader_parameter/color = Color(0.922914, 0.809833, 0.839728, 1)
+shader_parameter/progress = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dp40f"]
+animations = [{
+"frames": [{
+"duration": 0.1,
+"texture": ExtResource("2_1i4p7")
+}, {
+"duration": 0.1,
+"texture": ExtResource("3_cyv8i")
+}, {
+"duration": 0.1,
+"texture": ExtResource("4_imecb")
+}, {
+"duration": 0.1,
+"texture": ExtResource("5_570ov")
+}, {
+"duration": 0.1,
+"texture": ExtResource("6_6wdf7")
+}, {
+"duration": 0.1,
+"texture": ExtResource("7_5hdqo")
+}, {
+"duration": 0.1,
+"texture": ExtResource("8_178ni")
+}, {
+"duration": 0.1,
+"texture": ExtResource("9_6lp0c")
+}, {
+"duration": 0.1,
+"texture": ExtResource("10_k1ccy")
+}, {
+"duration": 0.1,
+"texture": ExtResource("11_2oj7v")
+}, {
+"duration": 0.1,
+"texture": ExtResource("12_ketsg")
+}, {
+"duration": 0.1,
+"texture": ExtResource("13_7f0h7")
+}, {
+"duration": 0.1,
+"texture": ExtResource("14_n7gu7")
+}, {
+"duration": 0.1,
+"texture": ExtResource("15_yhfs3")
+}, {
+"duration": 0.1,
+"texture": ExtResource("16_cx4ab")
+}, {
+"duration": 0.1,
+"texture": ExtResource("17_wws7l")
+}, {
+"duration": 0.1,
+"texture": ExtResource("18_1tusn")
+}, {
+"duration": 0.1,
+"texture": ExtResource("19_fhjlo")
+}, {
+"duration": 0.1,
+"texture": ExtResource("20_r66l3")
+}, {
+"duration": 0.1,
+"texture": ExtResource("21_wbqtj")
+}, {
+"duration": 0.1,
+"texture": ExtResource("22_wbhda")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tv6yo"]
+size = Vector2(12, 13)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lrqrj"]
+radius = 91.3589
+
+[sub_resource type="Animation" id="Animation_rknlq"]
+resource_name = "Explode"
+length = 0.36
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Explosion:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Explosion:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("drone:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Explosion:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.470588)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.35),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"stop_movement"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_e0obd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Explosion:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Explosion:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("drone:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Explosion:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7pklu"]
+_data = {
+"Explode": SubResource("Animation_rknlq"),
+"RESET": SubResource("Animation_e0obd")
+}
+
+[node name="Drone" type="CharacterBody2D" groups=["Entity"]]
+material = SubResource("ShaderMaterial_ox0pn")
+scale = Vector2(14, 14)
+collision_layer = 2
+collision_mask = 47
+script = ExtResource("1_t6816")
+
+[node name="drone" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_pfe3a")
+scale = Vector2(0.0270067, 0.0270067)
+sprite_frames = SubResource("SpriteFrames_dp40f")
+autoplay = "default"
+frame_progress = 0.486062
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_tv6yo")
+
+[node name="NoticeArea" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
+shape = SubResource("CircleShape2D_lrqrj")
+
+[node name="HitTimer" type="Timer" parent="."]
+wait_time = 0.3
+
+[node name="Explosion" type="Sprite2D" parent="."]
+scale = Vector2(0.0464052, 0.0464052)
+texture = ExtResource("23_x0axy")
+hframes = 3
+vframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7pklu")
+}
+
+[node name="VisualTimer" type="Timer" parent="."]
+wait_time = 0.2
+
+[connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
+[connection signal="timeout" from="HitTimer" to="." method="_on_hit_timer_timeout"]
+[connection signal="timeout" from="VisualTimer" to="." method="_on_visual_timer_timeout"]

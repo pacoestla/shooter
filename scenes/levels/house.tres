@@ -1,0 +1,212 @@
+[gd_resource type="TileSet" load_steps=33 format=3 uid="uid://6ycqcxe5njw5"]
+
+[ext_resource type="Texture2D" uid="uid://dxa807iyp8di2" path="res://Jeu Assets/interior.png" id="1_mkl2b"]
+[ext_resource type="Texture2D" uid="uid://ybolobhbemcc" path="res://Jeu Assets/Hay.png" id="2_cm2rn"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_qh5sb"]
+polygon = PackedVector2Array(195, 24, -195, 21, -195, -22, 81.0287, -20.5845, 195, -20)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4dar8"]
+polygon = PackedVector2Array(21, 195, 22, 21, 102, 22, 195, 21, 195, -22, -22, -21, -21, 195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_hjcg3"]
+polygon = PackedVector2Array(21, -195, 22, -21, 102, -22, 195, -21, 195, 22, -22, 21, -21, -195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_7gk7d"]
+polygon = PackedVector2Array(-24, 195, -21, -195, 22, -195, 20, 195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_h51g3"]
+polygon = PackedVector2Array(-21, 195, -22, 21, -102, 22, -195, 21, -195, -22, 22, -21, 21, 195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_vxt15"]
+polygon = PackedVector2Array(-21, -195, -22, -21, -102, -22, -195, -21, -195, 22, 22, 21, 21, -195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mx470"]
+polygon = PackedVector2Array(20, 20, 195, 22, 195, -19, -195, -21, -195, 22, -20, 23, -22, 195, 23, 195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_251ic"]
+polygon = PackedVector2Array(20, -20, 22, -195, -19, -195, -21, 195, 22, 195, 23, 20, 195, 22, 195, -23)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_udowd"]
+polygon = PackedVector2Array(66, -48, 128, -66, 195, -70, 195, 72, 124, 80, 70, 148, 68, 195, -72, 195, -68, 124, -42, 58, -8, 16, 22, -16)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_uxg4v"]
+polygon = PackedVector2Array(-72, 195, -70, -195, 72, -195, 70, 68, 68, 195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_neld1"]
+polygon = PackedVector2Array(-48, -66, -66, -128, -70, -195, 72, -195, 80, -124, 148, -70, 195, -68, 195, 72, 124, 68, 58, 42, 16, 8, -16, -22)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_fo6dc"]
+polygon = PackedVector2Array(20, -20, 195, -22, 195, 19, 22, 22, 19, 195, -21, 195, -20, 22, -195, 21, -195, -22, -20, -23, -22, -195, 23, -195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_m1cw7"]
+polygon = PackedVector2Array(-20, -20, -22, -195, 19, -195, 21, 195, -22, 195, -23, 20, -195, 22, -195, -23)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_t6wjg"]
+polygon = PackedVector2Array(20, -20, 195, -22, 195, 19, -195, 21, -195, -22, -20, -23, -22, -195, 23, -195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_hiana"]
+polygon = PackedVector2Array(-195, -72, 195, -70, 195, 72, -195, 76)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_l0h31"]
+polygon = PackedVector2Array(-195, -72, 195, -70, 195, 72, -195, 76)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_i0eso"]
+polygon = PackedVector2Array(19, 21, 195, 21, 195, -22, 16, -21)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_v46k5"]
+polygon = PackedVector2Array(48, 66, 66, 128, 70, 195, -72, 195, -80, 124, -148, 70, -195, 68, -195, -72, -124, -68, -58, -42, -16, -8, 16, 22)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_44tab"]
+polygon = PackedVector2Array(72, -195, 70, 195, -72, 195, -76, -195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_c458y"]
+polygon = PackedVector2Array(-66, 48, -128, 66, -195, 70, -195, -72, -124, -80, -70, -148, -68, -195, 72, -195, 68, -124, 42, -58, 8, -16, -22, 16)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_c4s62"]
+polygon = PackedVector2Array(-21, 19, -21, 195, 22, 195, 21, 16)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_40r1l"]
+polygon = PackedVector2Array(-21, -19, -21, -195, 22, -195, 21, -16)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_asm6v"]
+polygon = PackedVector2Array(-72, 195, -72, 169, 71, 171, 71, 195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_pgpmg"]
+polygon = PackedVector2Array(-72, -195, -72, -169, 71, -171, 71, -195)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_f6xwg"]
+polygon = PackedVector2Array(-71, 195, 70, 195, 71, 169, -71, 173)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_8l56f"]
+polygon = PackedVector2Array(-195, -72, -169, -76, -171, 70, -195, 71)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_seiop"]
+polygon = PackedVector2Array(195, -72, 169, -76, 171, 70, 195, 71)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_x6c8w"]
+polygon = PackedVector2Array(-19, 21, -195, 21, -195, -22, -16, -21)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_88oag"]
+resource_name = "interior"
+texture = ExtResource("1_mkl2b")
+texture_region_size = Vector2i(390, 390)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+3:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_udowd")
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(195, 71.4178, 147.785, 77.7817, 111.723, 97.5807, 82.7315, 135.765, 71.25, 195, -71.1855, 195, -67, 122, -40, 63, -17, 26, 13, -7, 75, -51, 135.765, -68.5894, 169.459, -72.4455, 195, -74.3354, 195, -71.8155)
+4:0/0 = 0
+4:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_hiana")
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-195, -74, 195, -72, 195, 70, -195, 72)
+5:0/0 = 0
+5:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_v46k5")
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-71.4178, 195, -77.7817, 147.785, -97.5807, 111.723, -135.765, 82.7315, -195, 71.25, -195, -71.1855, -162.312, -72.2267, -122, -67, -63, -40, -26, -17, -10.7093, -4.7247, 7, 13, 51, 75, 68.5894, 135.765, 72.4455, 169.459, 74.3354, 195, 71.8155, 195)
+6:0/0 = 0
+6:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_asm6v")
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(70.5, 171, 72, 195, -70, 195, -71.5, 170)
+5:1/0 = 0
+5:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_44tab")
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(74, -195, 72, 195, -70, 195, -72, -195)
+3:1/0 = 0
+3:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_uxg4v")
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(74, -195, 72, 195, -70, 195, -72, -195)
+2:1/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+3:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_neld1")
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(71.4178, -195, 77.7817, -147.785, 97.5807, -111.723, 135.765, -82.7315, 195, -71.25, 195, 71.1855, 122, 67, 63, 40, 26, 17, -7, -13, -51, -75, -68.5894, -135.765, -69.9256, -195)
+4:2/0 = 0
+4:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0h31")
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-195, -74, 195, -72, 195, 70, -195, 72)
+5:2/0 = 0
+5:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_c458y")
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-195, -71.4178, -147.785, -77.7817, -111.723, -97.5807, -82.7315, -135.765, -69.8457, -195, 71.1855, -195, 72.2267, -162.312, 67, -122, 40, -63, 17, -26, 4.7247, -10.7093, -13, 7, -75, 51, -135.765, 68.5894, -169.459, 72.4455, -195, 69.6472)
+6:2/0 = 0
+6:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_f6xwg")
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(70.5, -171, 72, -195, -70, -195, -71.5, -170)
+6:2/0/physics_layer_0/polygon_1/points = PackedVector2Array(-70.5, 195, -70.5, 171, 73.5, 172, 73.5, 195)
+6:3/0 = 0
+6:3/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_8l56f")
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-171, -70.5, -195, -72, -195, 70, -170, 71.5)
+2:3/0 = 0
+1:3/0 = 0
+0:3/0 = 0
+2:4/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+1:4/0 = 0
+0:6/0 = 0
+0:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_qh5sb")
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(20.1587, -20.7887, 195, -19.5288, 195, 19.5288, 20.2257, 20.7886, -22.0486, 20.1587, -195, 21.4186, -195, -21.4187, -19.5288, -21.4187)
+1:6/0 = 0
+1:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_7gk7d")
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.5061, -195, 19.0919, -195, 20.5061, 195, -20.5061, 195)
+0:7/0 = 0
+0:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_4dar8")
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(20.1587, -20.7887, 195, -19.5288, 195, 19.5288, 20.2257, 20.7886, 19.5288, 195, -22.0486, 195, -23.3085, 13.8591, -23.3085, -7.55952, -14.4891, -18.8988)
+0:8/0 = 0
+0:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_hjcg3")
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.7887, -20.1587, -19.5288, -195, 19.5288, -195, 20.7886, -20.2257, 195, -19.5288, 195, 22.0486, 13.8591, 23.3085, -7.55952, 23.3085, -18.8988, 14.4891)
+1:8/0 = 0
+1:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_vxt15")
+1:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.1587, 20.7887, -195, 19.5288, -195, -19.5288, -20.2257, -20.7886, -19.5288, -195, 22.0486, -195, 23.3085, -13.8591, 23.3085, 7.55952, 14.4891, 18.8988)
+1:7/0 = 0
+1:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_h51g3")
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(20.7887, 20.1587, 19.5288, 195, -19.5288, 195, -20.7886, 20.2257, -195, 19.5288, -195, -22.0486, -13.8591, -23.3085, 7.55952, -23.3085, 18.8988, -14.4891)
+2:7/0 = 0
+2:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_mx470")
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(195, -20.5061, 195, 20.0452, 20.7887, 20.1587, 19.5288, 195, -19.5288, 195, -20.7886, 20.2257, -195, 20.5061, -195, -20.5061)
+2:8/0 = 0
+2:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_251ic")
+2:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.5061, -195, 20.0452, -195, 20.1587, -20.7887, 195, -19.5288, 195, 19.5288, 20.2257, 20.7886, 20.5061, 195, -20.5061, 195)
+3:7/0 = 0
+3:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_m1cw7")
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(20.5061, 195, -20.0452, 195, -20.1587, 20.7887, -195, 19.5288, -195, -19.5288, -20.2257, -20.7886, -20.5061, -195, 20.5061, -195)
+3:8/0 = 0
+3:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_t6wjg")
+3:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-195, 20.5061, -195, -20.0452, -20.7887, -20.1587, -19.5288, -195, 19.5288, -195, 20.7886, -20.2257, 195, -20.5061, 195, 20.5061)
+3:6/0 = 0
+3:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_fo6dc")
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.5061, -195, 20.0452, -195, 20.1587, -20.7887, 195, -19.5288, 195, 19.5288, 20.2257, 20.7886, 20.5061, 195, -20.5061, 195, -22.0486, 20.1587, -195, 21.4186, -195, -21.4187, -19.5288, -21.4187)
+5:6/0 = 0
+5:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_c4s62")
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.7887, 20.1587, -19.5288, 195, 19.5288, 195, 20.7886, 20.2257)
+4:7/0 = 0
+4:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_i0eso")
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(20.1587, -20.7887, 195, -19.5288, 195, 19.5288, 20.2257, 20.7886)
+6:7/0 = 0
+6:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_x6c8w")
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.1587, -20.7887, -195, -19.5288, -195, 19.5288, -20.2257, 20.7886)
+5:8/0 = 0
+5:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_40r1l")
+5:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.7887, -20.1587, -19.5288, -195, 19.5288, -195, 20.7886, -20.2257)
+6:4/0 = 0
+6:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_seiop")
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(171, -70.5, 195, -72, 195, 70, 170, 71.5)
+6:1/0 = 0
+6:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_pgpmg")
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(70.5, -171, 72, -195, -70, -195, -71.5, -170)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stc3r"]
+resource_name = "hay"
+texture = ExtResource("2_cm2rn")
+texture_region_size = Vector2i(449, 445)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[resource]
+tile_size = Vector2i(390, 390)
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 4
+physics_layer_0/collision_mask = 11
+sources/0 = SubResource("TileSetAtlasSource_88oag")
+sources/1 = SubResource("TileSetAtlasSource_stc3r")

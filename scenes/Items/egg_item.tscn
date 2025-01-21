@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc2aantgv4tv4"]
+
+[ext_resource type="Script" path="res://scenes/Items/egg_item.gd" id="1_pei0f"]
+[ext_resource type="Texture2D" uid="uid://iv3vhe0byhqq" path="res://Jeu Assets/Items/Boite d'oeuf.png" id="1_wbwgc"]
+[ext_resource type="Texture2D" uid="uid://biv0r8favuyl1" path="res://Jeu Assets/circle.png" id="2_me38h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6vg33"]
+size = Vector2(98, 44)
+
+[node name="egg_item" type="Area2D" groups=["Items"]]
+scale = Vector2(0.759999, 0.759999)
+script = ExtResource("1_pei0f")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.758065, 0.77, 0.0539, 1)
+energy = 1.45
+texture = ExtResource("2_me38h")
+texture_scale = 0.59
+
+[node name="Egg" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.326313)
+texture = ExtResource("1_wbwgc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6vg33")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

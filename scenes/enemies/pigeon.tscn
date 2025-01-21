@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=3 uid="uid://wtgilovdsguk"]
+
+[ext_resource type="Texture2D" uid="uid://wb87v6h807q2" path="res://Jeu Assets/Pigeon_mechant.png" id="1_7abaq"]
+[ext_resource type="Script" path="res://scenes/enemies/pigeon.gd" id="1_ewa4j"]
+[ext_resource type="Shader" path="res://scenes/enemies/pigeon.gdshader" id="2_12kxp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yuaiq"]
+shader = ExtResource("2_12kxp")
+shader_parameter/color = Color(0.972127, 0.94232, 0.993466, 1)
+shader_parameter/progress = 0.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gudy1"]
+radius = 46.0354
+height = 186.01
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t7rn5"]
+radius = 1154.54
+
+[node name="Pigeon" type="CharacterBody2D" groups=["Entity", "Pigeons"]]
+scale = Vector2(0.722533, 0.722533)
+collision_layer = 2
+collision_mask = 37
+script = ExtResource("1_ewa4j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_yuaiq")
+position = Vector2(-46, 0)
+scale = Vector2(0.64, 0.64)
+texture = ExtResource("1_7abaq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.58393
+shape = SubResource("CapsuleShape2D_gudy1")
+
+[node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("CircleShape2D_t7rn5")
+
+[node name="BulletSpawnPositions" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="BulletSpawnPositions"]
+position = Vector2(-10, -12)
+
+[node name="Marker2D2" type="Marker2D" parent="BulletSpawnPositions"]
+position = Vector2(-12, 13)
+
+[node name="BulletCooldown" type="Timer" parent="."]
+
+[node name="Invicible" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="Invicible_visual" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="." method="_on_attack_area_body_exited"]
+[connection signal="timeout" from="BulletCooldown" to="." method="_on_bullet_cooldown_timeout"]
+[connection signal="timeout" from="Invicible" to="." method="_on_invicible_timeout"]
+[connection signal="timeout" from="Invicible_visual" to="." method="_on_invicible_visual_timeout"]

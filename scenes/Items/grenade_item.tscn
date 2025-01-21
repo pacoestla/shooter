@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7hwaqlvgs3o6"]
+
+[ext_resource type="Script" path="res://scenes/Items/grenade_item.gd" id="1_gd0eb"]
+[ext_resource type="Texture2D" uid="uid://dvuhsd57adhie" path="res://Jeu Assets/Items/Poele.png" id="1_mce5v"]
+[ext_resource type="Texture2D" uid="uid://biv0r8favuyl1" path="res://Jeu Assets/circle.png" id="2_um7la"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_70tr0"]
+radius = 25.02
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvd37"]
+size = Vector2(39, 6)
+
+[node name="grenade_item" type="Area2D"]
+scale = Vector2(1.36, 1.36)
+script = ExtResource("1_gd0eb")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.63, 0, 0, 1)
+energy = 2.87
+texture = ExtResource("2_um7la")
+texture_scale = 0.4
+
+[node name="Grenade" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_mce5v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-19, 0)
+shape = SubResource("CircleShape2D_70tr0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(25.5, 0)
+shape = SubResource("RectangleShape2D_gvd37")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
