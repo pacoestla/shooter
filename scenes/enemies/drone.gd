@@ -6,7 +6,7 @@ var speed:int = 0
 var speed_mult:int = 1
 var health:int = 50
 var explode_active:bool = false
-var explode_radius:int = 300
+var explode_radius:int = 200
 
 func _ready():
 	$Explosion.hide()

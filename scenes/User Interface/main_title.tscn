@@ -12,8 +12,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pc7n4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.709
 anchor_top = 0.268
@@ -26,27 +27,26 @@ grow_horizontal = 0
 grow_vertical = 0
 alignment = 1
 
-[node name="PlayButton" type="Button" parent="VBoxContainer"]
+[node name="PlayButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 theme = ExtResource("2_keysh")
 theme_override_font_sizes/font_size = 66
 text = "Play"
 
-[node name="Story" type="Button" parent="VBoxContainer"]
+[node name="Story" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_keysh")
 theme_override_font_sizes/font_size = 26
 text = "Basic Information"
 
-[node name="Quit Button" type="Button" parent="VBoxContainer"]
+[node name="Quit Button" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_keysh")
 theme_override_font_sizes/font_size = 16
 text = "Quit Game"
 
-[node name="Title" type="Label" parent="."]
-layout_mode = 1
+[node name="Title" type="Label" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.201
 anchor_right = 0.794
@@ -62,7 +62,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="Sub" type="Label" parent="Title"]
+[node name="Sub" type="Label" parent="CanvasLayer/Title"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.624
@@ -80,6 +80,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Story" to="." method="_on_story_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit Button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Story" to="." method="_on_story_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Quit Button" to="." method="_on_quit_button_pressed"]
